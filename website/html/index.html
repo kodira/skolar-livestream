@@ -5,17 +5,31 @@
     <meta charset="utf-8"/>
 
     <link href="https://vjs.zencdn.net/7.5.4/video-js.css" rel="stylesheet">
+    
+    <script>
+        window.HELP_IMPROVE_VIDEOJS = false;
+    </script>
     <script src='https://vjs.zencdn.net/7.5.4/video.js'></script>
 
 </head>
 
 <body>
 
-  <h1>Live-Stream</h1>
+  <h1>Live 1</h1>
 
-  <video id='my-video' class='video-js' controls preload='auto' width='640' height='264'
+  <video id='my-video1' class='video-js vjs-big-play-centered' controls preload='auto' width='640' height='360'
   poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
-        <source src="https://stream.skolar.de/live/test.m3u8" type="application/x-mpegURL"/>
+        <source src="https://stream.skolar.de/live/stream1.m3u8" type="application/x-mpegURL"/>
+	  <p class='vjs-no-js'>
+      To view this video please enable JavaScript, and consider upgrading to a web browser that
+      <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
+    </p>
+  </video>
+
+  <h1>Live 2</h1>
+  <video id='my-video2' class='video-js vjs-big-play-centered' controls preload='auto' width='640' height='360'
+  poster='MY_VIDEO_POSTER.jpg' data-setup='{}'>
+        <source src="https://stream.skolar.de/live/stream2.m3u8" type="application/x-mpegURL"/>
 	  <p class='vjs-no-js'>
       To view this video please enable JavaScript, and consider upgrading to a web browser that
       <a href='https://videojs.com/html5-video-support/' target='_blank'>supports HTML5 video</a>
