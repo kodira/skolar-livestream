@@ -8,13 +8,14 @@ services:
       context: streamserver
     ports:
       - 1935:1935
-      - 8081:80
 
   website:
     image: skolar/live-website
     build:
       context: website
-    ports:
-      - 8080:8080
 
+networks:
+  default:
+    external:
+      name: skolar-livestream
 

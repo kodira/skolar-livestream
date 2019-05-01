@@ -7,7 +7,7 @@ RUN rm -rf /etc/nginx
 COPY nginx /etc/nginx
 COPY html/* .
 
-EXPOSE 8080
+EXPOSE 80
 CMD nginx
 
 
